@@ -4,6 +4,7 @@
 
 ####Saját####
 kepek
+.ipynb_checkpoints
 
 ### Django ###
 *.log
