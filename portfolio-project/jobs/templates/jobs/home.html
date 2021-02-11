@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -27,14 +28,6 @@
           font-size: 3.5rem;
         }
       }
-
-
-
-
-
-
-
-
     </style>
 </head>
 
@@ -58,6 +51,8 @@
                        rel="noopener noreferrer">Facebook</a>
                     <a class="nav-link" href="https://www.youtube.com/channel/UCWE62z06y1OrhqHYo4y3CRg" target="_blank"
                        rel="noopener noreferrer">Youtube</a>
+                    <a class="nav-item nav-link" href="{% static 'ADAM_GYARMATI_CV.pdf' %}" target="_blank"
+                       rel="noopener noreferrer">Resume</a>
                     <a class="nav-link" href="/blog">Some fun?</a>
                 </div>
             </div>
