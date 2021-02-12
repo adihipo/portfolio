@@ -14,6 +14,11 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <style>
+      #avatar {
+        border: 3px solid gray;
+        border-radius: 20px;
+      }
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -27,6 +32,12 @@
           font-size: 3.5rem;
         }
       }
+
+
+
+
+
+
     </style>
 </head>
 
@@ -67,14 +78,17 @@
                 <h1 class="fw-light">Hi! I am Ádám.</h1>
                 <p class="lead text-muted">I love DATA SCIENCE. I'm a gamer who loves challenges as
                     hard and tricky as a Dark Souls boss. </p>
-                <p>
-                    <a href="mailto:gyarmatiaadaam@gmail.com" class="btn btn-primary my-2">Email me</a>
-                </p>
-                <img src="{% static 'adam2.png' %}" width="70%" height="auto" />
-                <p class="pt-5 lead text-muted">According to my friends and colleagues I am:</p>
-                <img class="pt-2" src="{% static 'wc.png' %}" width="100%" height="auto" />
+                <img id="avatar" src="{% static 'adam2.png' %}" width="80%" height="auto"/>
             </div>
         </div>
+    </section>
+
+    <section class="py-5 text-center container">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <p class="lead text-muted">I asked my friends and colleagues to write something honest about me.
+                    According to them I am:</p>
+            </div>
+        <img src="{% static 'wc.png' %}" width="80%" height="auto"/>
     </section>
 
     <div class="album py-5 bg-light">
@@ -124,6 +138,13 @@
         </div>
     </div>
 
+    <section class="py-5 text-center container">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <p>
+                    <a href="mailto:gyarmatiaadaam@gmail.com" class="btn btn-primary my-2">Email me</a>
+                </p>
+            </div>
+    </section>
 
 </main>
 
